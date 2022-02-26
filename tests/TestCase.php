@@ -3,7 +3,6 @@
 namespace Tests;
 
 use Orchestra\Testbench\TestCase as LaravelTestCase;
-use Stayallive\Laravel\Eloquent\UUID\ServiceProvider;
 
 class TestCase extends LaravelTestCase
 {
