@@ -24,14 +24,6 @@ trait UsesUUID
     }
 
 
-    public function ensureUUIDExists(): void
-    {
-        if (empty($this->getAttribute($this->getUUIDAttributeName()))) {
-            $this->setAttribute($this->getUUIDAttributeName(), Uuid::uuid4()->toString());
-        }
-    }
-
-
     public function scopeUuid(Builder $query, string $uuid): void
     {
         $query->where(function (Builder $query) use ($uuid) {
@@ -60,5 +52,13 @@ trait UsesUUID
     public static function findOrFailByUuid(string $uuid): self
     {
         return self::query()->uuid($uuid)->firstOrFail();
+    }
+
+
+    private function ensureUUIDExists(): void
+    {
+        if (empty($this->getAttribute($this->getUUIDAttributeName()))) {
+            $this->setAttribute($this->getUUIDAttributeName(), Uuid::uuid4()->toString());
+        }
     }
 }
