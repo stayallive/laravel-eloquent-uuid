@@ -1,5 +1,10 @@
 # Laravel Eloquent UUID
 
+[![Latest Version](https://img.shields.io/github/release/stayallive/laravel-eloquent-uuid.svg?style=flat-square)](https://github.com/stayallive/laravel-eloquent-uuid/releases)
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
+[![Build Status](https://img.shields.io/github/workflow/status/stayallive/laravel-eloquent-uuid/CI/master.svg?style=flat-square)](https://github.com/stayallive/laravel-eloquent-uuid/actions/workflows/ci.yaml)
+[![Total Downloads](https://img.shields.io/packagist/dt/stayallive/laravel-eloquent-uuid.svg?style=flat-square)](https://packagist.org/packages/stayallive/laravel-eloquent-uuid)
+
 Generate UUID for a Laravel Eloquent model attribute.
 
 ## Installation
