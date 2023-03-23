@@ -7,6 +7,9 @@
 
 Generate UUID for a Laravel Eloquent model attribute.
 
+> **Note**
+> This package still works great, however since Laravel 10 this package is no longer needed as Laravel now has a built-in UUID/ULID traits that work much the same as this package. Read more about UUID/ULID in the [Laravel documentation](https://laravel.com/docs/10.x/eloquent#uuid-and-ulid-keys).
+
 ## Installation
 
 ```bash
