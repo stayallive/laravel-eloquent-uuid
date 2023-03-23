@@ -42,7 +42,7 @@ class UsesUUIDTest extends TestCase
     {
         /** @var ModelWithUuid $model */
         $model = tap(new ModelWithUuid([
-            'id'   => $id = Str::random(),
+            'id'   => $id   = Str::random(),
             'name' => $name = Str::random(),
         ]))->save();
 
